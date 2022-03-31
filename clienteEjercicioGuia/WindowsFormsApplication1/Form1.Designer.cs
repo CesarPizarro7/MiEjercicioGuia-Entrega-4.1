@@ -39,6 +39,8 @@
             this.Bonito = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.Desconectar = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.contLbl = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +77,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.groupBox1.Controls.Add(this.contLbl);
+            this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.Alto);
             this.groupBox1.Controls.Add(this.textBoxAltura);
             this.groupBox1.Controls.Add(this.label1);
@@ -167,6 +171,29 @@
             this.Desconectar.UseVisualStyleBackColor = true;
             this.Desconectar.Click += new System.EventHandler(this.Desconectar_Click);
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(8, 235);
+            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(158, 71);
+            this.button4.TabIndex = 12;
+            this.button4.Text = "¿Cuántos servicios?";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // contLbl
+            // 
+            this.contLbl.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.contLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contLbl.Location = new System.Drawing.Point(191, 235);
+            this.contLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.contLbl.Name = "contLbl";
+            this.contLbl.Size = new System.Drawing.Size(100, 71);
+            this.contLbl.TabIndex = 13;
+            this.contLbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -198,6 +225,8 @@
         private System.Windows.Forms.TextBox textBoxAltura;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button Desconectar;
+        private System.Windows.Forms.Label contLbl;
+        private System.Windows.Forms.Button button4;
     }
 }
 
